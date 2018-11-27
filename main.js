@@ -23,9 +23,6 @@ function printData(data){
     $("#image").html("<img src=" + image + " />");
 
     // if character faces right, float the image left and put the name on the right. Else, do the reverse.
-    console.log($(document).width());
-    console.log($(window).width());
-
     if ($(document).width() > 600){
         if (data['characterDirection'] == "Right"){
             $("#character").css("float", "left");
